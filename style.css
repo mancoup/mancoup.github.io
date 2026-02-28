@@ -146,4 +146,13 @@ a:active {
   font-size: 14px;
 }
 
-	
+/* Sections de contenu */
+.passion-section {
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.passion-section img {
+  display: block;
+  margin: 10px auto;
+}
