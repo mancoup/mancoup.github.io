@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -8,77 +8,105 @@
 </head>
 
 <body>
-	<div id="entete-de-page"> 
-		<p> Accueil <br/> </p>
-	</div> 
-	
+	<div id="entete-de-page">
+		<p> ✨ Bienvenue sur le site de Manon ✨ </p>
+	</div>
+
 	<table id="bloc-menu" border="1">
 	<tr>
-		<th><a href="index.html"> Accueil </a></th>
-		<th><a href="productions.html">Productions scolaires</a></th>
-		<th><a href="passions.html">Mes passions</a></th>
-		<th><a href="videos.html">Mes vidéos</a></th>
-		<th><a href="monsitedereve/index.html">Mon site de reve</a></th>
-		
+		<th><a href="index.html"> 🏠 Accueil </a></th>
+		<th><a href="productions.html">📚 Productions scolaires</a></th>
+		<th><a href="passions.html">💖 Mes passions</a></th>
+		<th><a href="videos.html">🎬 Mes vidéos</a></th>
+		<th><a href="monsitedereve/index.html">🌈 Mon site de rêve</a></th>
 	</tr>
-	</table> <br/> 
-	
+	</table> <br/>
+
 	<div id="contenu">
-		<h1> Accueil </h1>
-		<img src="avatar.png" alt="mon_avatar" height="10%" width="10%"class="arrondie">
-		<h2> Je me présente...</h2>
-		<div><p> Je suis Manon Coupez en classe de seconde 13 au lycée sacré coeur à tourcoing. J'aime sortir avec mes amies et faire de nouvelles rencontres,j'ai une petite
-		soeur et un grand frère. Je suis attentionné et créative mais parfois maladroite.J'écoute souvent de la musique 
-		et j'aime me détendre en lisant des histoires d'amour ou en regardant des films d'actions. J'aime aussi faire du sport comme du tennis ou simplement de la course a pied quand j'en ai l'occasion.
-		J'ai les cheveux chatains et les yeux bleu, je suis assez grande.
-		</p>
+
+		<!-- ========== QUI SUIS-JE ? ========== -->
+		<h1> 🙋‍♀️ Qui suis-je ? </h1>
+		<div class="presentation">
+			<img src="avatar.png" alt="mon_avatar" class="arrondie">
+			<div class="texte-presentation">
+				<p>👋 Salut ! Moi c'est <strong>Manon Coupez</strong>, j'ai 15 ans et je suis en classe de <strong>seconde 13</strong> au lycée Sacré-Cœur à Tourcoing.</p>
+				<p>✨ <strong>Ma personnalité :</strong> Je suis attentionnée et créative, mais parfois un peu maladroite 😅 !
+				J'adore sortir avec mes amies et faire de nouvelles rencontres. J'ai une petite sœur et un grand frère 👨‍👩‍👧‍👦.</p>
+				<p>📖 Quand je me détends, j'aime lire des histoires d'amour 💕 ou regarder des films d'action 🎬.
+				J'écoute aussi beaucoup de musique 🎧, c'est ma bulle à moi !</p>
+				<p>🏃‍♀️ Côté sport, je fais du tennis 🎾 et de la course à pied quand j'en ai l'occasion.</p>
+			</div>
 		</div>
-		<div><!--on ajoute le lien où se trouve la musique -->
-<audio  id="zic"src="music.mp3"></audio>
-<!--on nomme les boutons et leur statut -->
-<div>
-<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
-<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
-<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
-</div>
-<!--on écrit les variable du script -->
-<script>
-<!--on attribue valeur et fonction de chaque bouton -->
-function changeState(x){
-let boutons = document.querySelectorAll(".bouton");
-let audio = document.querySelector("#zic");
-for(let i =0; i<boutons.length; i++){
-boutons[i].classList.remove("active");
-}
-boutons[x].classList.add("active");
-if(x == 0){
-audio.play();
-}
-if(x == 1){
-audio.pause();
-}
-if(x == 2){
-audio.pause();
-audio.currentTime = 0;
-}
-}
-</script></div>
-			
+
 		<hr>
-		<div id="infos">
-			<h3> A lire aussi: </h3>
-			<ul>
-				<li> <a href="passions.html">Mes passions </a> </li>
-			<li> <a href="https://fr.pinterest.com/" target="_blank">Pineterest</a> </li>
-			
-		</ul>
+
+		<!-- ========== MES PASSIONS EN UN COUP D'ŒIL ========== -->
+		<h1> 💖 Mes passions en un coup d'œil </h1>
+		<p>Voici ce qui me fait vibrer au quotidien ! Clique sur le lien en bas pour en savoir plus 😊</p>
+
+		<div class="passions-apercu">
+			<div class="passion-carte">
+				<img src="images/jeux videos.jpg" alt="Jeux vidéos" height="200" class="arrondie1">
+				<h3>🎮 Jeux vidéos</h3>
+				<p>Fan de Zelda et de jeux d'aventure ! Rien de mieux pour s'évader après les cours 🗡️</p>
+			</div>
+			<div class="passion-carte">
+				<img src="images/musique.jpg" alt="Musique" height="200" class="arrondie1">
+				<h3>🎵 Musique</h3>
+				<p>Toujours mes écouteurs sur les oreilles ! La musique m'accompagne partout 🎶</p>
+			</div>
+			<div class="passion-carte">
+				<img src="images/voyage.jpg" alt="Voyage" height="200" class="arrondie1">
+				<h3>✈️ Voyage</h3>
+				<p>Découvrir de nouveaux endroits, de nouvelles cultures... c'est mon rêve ! 🌍</p>
+			</div>
 		</div>
-	</div> <br/> 
-	
+		<p>👉 <a href="passions.html"><strong>Découvrir toutes mes passions →</strong></a></p>
+
+		<hr>
+
+		<!-- ========== MA MUSIQUE ========== -->
+		<h1> 🎶 Ma musique du moment </h1>
+		<p>Envie d'écouter ce que j'aime ? Appuie sur Play et profite ! 🔊</p>
+		<audio id="zic" src="music.mp3"></audio>
+		<div>
+			<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">▶️ PLAY</a>
+			<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">⏸️ PAUSE</a>
+			<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">⏹️ STOP</a>
+		</div>
+
+		<script>
+		function changeState(x){
+			let boutons = document.querySelectorAll(".bouton");
+			let audio = document.querySelector("#zic");
+			for(let i = 0; i < boutons.length; i++){
+				boutons[i].classList.remove("active");
+			}
+			boutons[x].classList.add("active");
+			if(x == 0){ audio.play(); }
+			if(x == 1){ audio.pause(); }
+			if(x == 2){ audio.pause(); audio.currentTime = 0; }
+		}
+		</script>
+
+		<hr>
+
+		<!-- ========== LIENS UTILES ========== -->
+		<div id="infos">
+			<h3> 🔗 Liens utiles </h3>
+			<ul>
+				<li> <a href="passions.html">💖 Mes passions</a> </li>
+				<li> <a href="productions.html">📚 Mes productions scolaires</a> </li>
+				<li> <a href="videos.html">🎬 Mes vidéos</a> </li>
+				<li> <a href="https://fr.pinterest.com/" target="_blank">📌 Pinterest</a> </li>
+			</ul>
+		</div>
+	</div> <br/>
+
 	<div id="pied-de-page">
-		<p> Projet SNT - Dernière mise à jour : 16/12/2025 <br/>
+		<p> 🌸 Projet SNT - Dernière mise à jour : 28/02/2026 <br/>
 		Les textes et images utilisés n'engagent que son auteur : Manon </p>
-	</div> <br/> 
+	</div> <br/>
 
 </body>
 
