@@ -1,102 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-	<title> Mon site de rêve </title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon voyage au Japon - 2025</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-	<div id="entete-de-page">
-		<p> 🌈 Mon site de rêve </p>
-	</div>
 
-	<table id="bloc-menu" border="1">
-	<tr>
-		<th><a href="../index.html"> Accueil </a></th>
-		<th><a href="../productions.html">Productions scolaires</a></th>
-		<th><a href="../passions.html">Mes passions</a></th>
-		<th><a href="../videos.html">Mes vidéos</a></th>
-		<th><a href="index.html">Mon site de rêve</a></th>
-	</tr>
-	</table> <br/>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="../japon/IMG_7994.JPEG" alt="Torii de Miyajima au coucher du soleil" />
+    <div class="hero-content">
+      <div class="subtitle">Printemps 2025</div>
+      <h1>Mon voyage au Japon</h1>
+      <p>Deux semaines inoubliables à travers le pays du soleil levant, avec mon père, ma sœur et mon frère. Des néons de Tokyo aux temples de Kyoto, des cerisiers en fleurs au torii flottant de Miyajima.</p>
+      <a href="#destinations" class="btn btn-outline" style="margin-top:20px;">Découvrir le voyage</a>
+    </div>
+  </div>
 
-	<div id="contenu">
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="tokyo.html">Tokyo</a></li>
+      <li><a href="kyoto.html">Kyoto</a></li>
+      <li><a href="osaka.html">Osaka</a></li>
+      <li><a href="hiroshima.html">Hiroshima</a></li>
+      <li><a href="../index.html">← Retour au site</a></li>
+    </ul>
+  </nav>
 
-		<h1> 🌈 Mon site de rêve </h1>
-		<p>Si je pouvais créer le site parfait, à quoi ressemblerait-il ? Voici mes idées et mes envies pour un site qui me ressemble à 100% !</p>
+  <!-- INTRO -->
+  <section>
+    <div class="section-title">
+      <h2>Un rêve devenu réalité</h2>
+      <span class="jp">夢が叶った</span>
+    </div>
+    <p class="intro-text">
+      Le Japon, j'en rêvais depuis toujours. Les cerisiers en fleurs, les temples, la nourriture, la culture...
+      En 2025, ce rêve est devenu réalité. Avec mon père, ma grande sœur et mon petit frère, nous avons traversé
+      le Japon du nord au sud pendant deux semaines magiques. Voici notre histoire.
+    </p>
+  </section>
 
-		<hr>
+  <!-- CITATION -->
+  <div class="quote-banner">
+    <blockquote>« Le voyage ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux. »</blockquote>
+    <div class="author">Marcel Proust</div>
+  </div>
 
-		<!-- ========== LE THÈME ========== -->
-		<div class="passion-section">
-			<h2> 🎨 Le thème et l'ambiance </h2>
-			<p>Mon site de rêve aurait une ambiance <strong>douce et chaleureuse</strong>, avec des couleurs pastel (rose, beige, lavande) et des polices d'écriture élégantes.</p>
-			<p>Il y aurait des animations subtiles quand on survole les éléments et de jolies illustrations partout pour rendre la navigation agréable.</p>
-		</div>
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <div class="section-title">
+      <h2>Nos étapes</h2>
+      <span class="jp">旅の行程</span>
+    </div>
+    <p class="intro-text">
+      De Tokyo à Hiroshima, en passant par Kyoto et Osaka, chaque ville nous a offert des moments uniques.
+      Cliquez sur une destination pour revivre l'aventure.
+    </p>
 
-		<hr>
+    <div class="card-grid">
+      <a href="tokyo.html" class="card">
+        <img src="../japon/IMG_6787.JPEG" alt="Shibuya Crossing" />
+        <div class="card-body">
+          <h3>🗼 Tokyo</h3>
+          <div class="jp-small">東京</div>
+          <p>Shibuya, Harajuku, Akihabara, TeamLab, Tokyo Tower... La capitale dans toute sa folie.</p>
+        </div>
+      </a>
 
-		<!-- ========== LES FONCTIONNALITÉS ========== -->
-		<div class="passion-section">
-			<h2> ⚡ Les fonctionnalités </h2>
-			<p>Mon site idéal aurait plein de fonctionnalités cool :</p>
-			<ul>
-				<li>Un <strong>mode sombre / clair</strong> pour s'adapter à l'humeur du moment</li>
-				<li>Une <strong>playlist intégrée</strong> avec mes morceaux préférés en fond</li>
-				<li>Un <strong>livre d'or</strong> où mes amies pourraient laisser des messages</li>
-				<li>Une <strong>galerie photo</strong> avec mes plus beaux souvenirs</li>
-				<li>Des <strong>animations</strong> qui rendent la navigation magique</li>
-			</ul>
-		</div>
+      <a href="kyoto.html" class="card">
+        <img src="../japon/IMG_7451.JPEG" alt="Kiyomizu-dera" />
+        <div class="card-body">
+          <h3>⛩️ Kyoto</h3>
+          <div class="jp-small">京都</div>
+          <p>Temples, torii, cerisiers en fleurs et forêt de bambous. Le Japon traditionnel dans toute sa splendeur.</p>
+        </div>
+      </a>
 
-		<hr>
+      <a href="osaka.html" class="card">
+        <img src="../japon/IMG_7312.JPEG" alt="Super Nintendo World" />
+        <div class="card-body">
+          <h3>🎮 Osaka</h3>
+          <div class="jp-small">大阪</div>
+          <p>Universal Studios Japan et le monde de Super Mario ! Le parc d'attractions de nos rêves.</p>
+        </div>
+      </a>
 
-		<!-- ========== LE CONTENU ========== -->
-		<div class="passion-section">
-			<h2> 📖 Le contenu </h2>
-			<p>Il y aurait beaucoup plus de contenu que maintenant !</p>
-			<ul>
-				<li>Un <strong>blog</strong> où je partagerais mes coups de cœur (livres, films, jeux...)</li>
-				<li>Une page <strong>recettes</strong> avec mes plats préférés</li>
-				<li>Un <strong>journal de voyage</strong> avec photos et anecdotes</li>
-				<li>Une section <strong>DIY / créations</strong> pour montrer mes projets créatifs</li>
-			</ul>
-		</div>
+      <a href="hiroshima.html" class="card">
+        <img src="../japon/IMG_7844.JPEG" alt="Torii de Miyajima" />
+        <div class="card-body">
+          <h3>🦌 Hiroshima & Miyajima</h3>
+          <div class="jp-small">広島・宮島</div>
+          <p>Le château, le torii flottant, les cerfs sauvages et un coucher de soleil inoubliable.</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
-		<hr>
+  <!-- APERÇU CULTURE -->
+  <section class="alt-bg">
+    <div class="section-title">
+      <h2>Vivre à la japonaise</h2>
+      <span class="jp">日本の暮らし</span>
+    </div>
 
-		<!-- ========== L'INSPIRATION ========== -->
-		<div class="passion-section">
-			<h2> 💡 Mes inspirations </h2>
-			<p>Pour créer ce site de rêve, je m'inspirerais de :</p>
-			<ul>
-				<li><strong>Pinterest</strong> — pour l'esthétique et la mise en page</li>
-				<li><strong>Tumblr</strong> — pour l'ambiance créative et personnelle</li>
-				<li><strong>Les blogs japonais</strong> — pour leur style mignon et soigné</li>
-			</ul>
-			<p>Un jour peut-être, ce site deviendra mon site de rêve pour de vrai !</p>
-		</div>
+    <div class="story-block">
+      <img src="../japon/IMG_7650.JPEG" alt="En yukata dans le ryokan" />
+      <div class="text">
+        <h3>Dormir en ryokan</h3>
+        <p>L'une des expériences les plus marquantes du voyage : dormir dans un ryokan traditionnel. Futons sur tatamis, yukatas bleus assortis, portes coulissantes en papier... On s'est senties comme dans un film !</p>
+        <p>Le soir, après un bain dans le onsen, on enfilait nos yukatas et on profitait du calme absolu. Un vrai moment de paix en famille.</p>
+      </div>
+    </div>
 
-		<hr>
+    <div class="story-block reverse">
+      <img src="../japon/IMG_6860.JPEG" alt="Ramen" />
+      <div class="text">
+        <h3>La nourriture japonaise</h3>
+        <p>Les ramen ! Impossible de visiter le Japon sans goûter à de vrais ramen. Bouillon fumant, nouilles parfaites, œuf mollet... Un vrai bonheur à chaque bouchée avec les baguettes.</p>
+        <p>On a aussi découvert les croissants colorés, les mochis en forme de personnages Sanrio, et tellement d'autres merveilles culinaires.</p>
+      </div>
+    </div>
 
-		<div id="infos">
-			<h3>🔗 Voir aussi</h3>
-			<ul>
-				<li><a href="../index.html">Retour à l'accueil</a></li>
-				<li><a href="../passions.html">Mes passions</a></li>
-				<li><a href="../videos.html">Mes vidéos</a></li>
-			</ul>
-		</div>
+    <div class="story-block">
+      <img src="../japon/IMG_8014.JPEG" alt="Selfie avec papa" />
+      <div class="text">
+        <h3>Des moments en famille</h3>
+        <p>Ce voyage, c'est avant tout une aventure en famille. Avec papa, ma sœur et mon frère, on a partagé des fous rires, des découvertes et des moments de complicité inoubliables.</p>
+        <p>De la traversée du carrefour de Shibuya à la rencontre des cerfs de Miyajima, chaque instant était plus beau parce qu'on le vivait ensemble.</p>
+      </div>
+    </div>
+  </section>
 
-	</div> <br/>
+  <!-- CHIFFRES -->
+  <section>
+    <div class="section-title">
+      <h2>Le voyage en quelques chiffres</h2>
+      <span class="jp">数字で見る旅</span>
+    </div>
+    <div class="card-grid" style="text-align:center;">
+      <div class="card" style="cursor:default;">
+        <div class="card-body">
+          <h3 style="font-size:2.5rem;color:var(--rouge-torii);">5</h3>
+          <p>villes visitées</p>
+        </div>
+      </div>
+      <div class="card" style="cursor:default;">
+        <div class="card-body">
+          <h3 style="font-size:2.5rem;color:var(--rouge-torii);">14</h3>
+          <p>jours de voyage</p>
+        </div>
+      </div>
+      <div class="card" style="cursor:default;">
+        <div class="card-body">
+          <h3 style="font-size:2.5rem;color:var(--rouge-torii);">4</h3>
+          <p>membres de la famille</p>
+        </div>
+      </div>
+      <div class="card" style="cursor:default;">
+        <div class="card-body">
+          <h3 style="font-size:2.5rem;color:var(--rouge-torii);">∞</h3>
+          <p>souvenirs inoubliables</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<div id="pied-de-page">
-		<p> Projet SNT - Dernière mise à jour : 28/02/2026 <br/>
-		Les textes et images utilisés n'engagent que son auteur : Manon </p>
-	</div> <br/>
+  <!-- FOOTER -->
+  <footer>
+    <p>Mon voyage au Japon — Printemps 2025 — <a href="../index.html">Retour au site de Manon</a></p>
+    <p style="margin-top:5px;opacity:0.6;">Projet SNT — Lycée Sacré-Cœur, Tourcoing</p>
+  </footer>
 
 </body>
-
 </html>
